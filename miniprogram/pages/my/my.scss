@@ -1,0 +1,138 @@
+$color1: #ff135d;
+Page {
+  background: #f8f8f8;
+}
+.page-top {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 170rpx;
+  .user {
+    display: flex;
+    align-items: center;
+    margin-left: 30rpx;
+    .avatar {
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 50%;
+    margin-right: 20rpx;
+  }
+    .text {
+      .name {
+        font-size: 38rpx;
+        color: #111;
+      }
+      .id {
+        margin-top: 10rpx;
+        font-size: 26rpx;
+        color: #999;
+      }
+    }
+  }
+  .service {
+    background: #f3f5f7;
+    border-radius: 31rpx 0 0 31rpx;
+    width: 140rpx;
+    height: 62rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-service {
+      color: #99aabc;
+      margin-right: 10rpx;
+    }
+    .text {
+      font-size: 28rpx;
+      color: #8598aa;
+    }
+  }
+}
+.section {
+  background: #ffffff;
+  width: 710rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    height: 90rpx;
+    padding-left: 30rpx;padding-right: 20rpx;
+    .left {
+      font-size: 32rpx;
+      
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text {
+        font-size: 28rpx;
+        color: #666;
+        margin-right: 10rpx;
+      }
+      .icon-arrow-right {
+        font-size: 28rpx;
+        color: #999;
+      }
+    }
+  }
+  .bottom {
+    height: 155rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      .amount {
+        color: $color1;
+        .unit {
+          font-size: 22rpx;
+        }
+        .num {
+          font-size: 38rpx;
+        }
+      }
+      .text {
+        font-size: 28rpx;
+        color: #333;
+        margin-top: 20rpx;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid #f8f8f8;
+      }
+    }
+  }
+  .icons {
+    height: 182rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      .iconfont {
+        color: $color1;
+        font-size: 54rpx;
+        width: 54rpx;
+        height: 54rpx;
+      }
+      .text {
+        font-size: 28rpx;
+        color: #333;
+        margin-top: 20rpx;
+      }
+    }
+  }
+}

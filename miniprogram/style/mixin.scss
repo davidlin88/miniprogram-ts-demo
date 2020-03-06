@@ -1,0 +1,18 @@
+// margin
+@mixin mt($n) {
+  margin-top: $n * 1rpx;
+}
+@mixin mb($n) {
+  margin-bottom: $n * 1rpx;
+}
+@mixin ml($n) {
+  margin-left: $n * 1rpx;
+}
+@mixin mr($n) {
+  margin-right: $n * 1rpx;
+}
+
+// font-size
+@mixin fz($n) {
+  font-size: $n * 1rpx;
+}
